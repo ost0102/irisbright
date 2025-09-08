@@ -1,0 +1,26 @@
+footer{
+    padding-top: 100px;
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+        padding: 0 45px;
+        background: linear-gradient(45deg, #00FF73, #DFE621);
+        .brand-img{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            path.stroke-path {
+                fill: #002AFF;
+            }
+            img{
+                width: 80px;
+            }
+        }
+        .footer-cont{
+            font-size: 18px;
+            font-family: 'contents';
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@use './base/preset';
+@use './base/reset';
+@use './base/typo';
+
+@use './layout/header';
+@use './layout/footer';
+
+@use './page/main';
+@use './page/more';

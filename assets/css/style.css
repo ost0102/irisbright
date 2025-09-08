@@ -1,0 +1,328 @@
+.revenip {
+  color: #DFE621;
+}
+
+.mobleo {
+  color: #00FF73;
+}
+
+.guiltip {
+  color: #1D00EF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+  min-width: 1500px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, select, textarea {
+  outline: none;
+}
+
+html.active {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("../fonts/RX100-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "contents-title";
+  src: url("../fonts/Tanker-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "contents";
+  src: url("../fonts/NotoSansKR-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "num";
+  src: url("../fonts/Panchang-Medium.ttf") format("truetype");
+}
+header .header-inner .menu .hamburger {
+  position: fixed;
+  top: 45px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+}
+header .header-inner .menu .hamburger img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+header .header-inner .menu .hamburger .open {
+  opacity: 1;
+}
+header .header-inner .menu .hamburger .close {
+  opacity: 0;
+}
+header .header-inner .menu.active {
+  position: fixed;
+  height: 100%;
+  width: 400px;
+  background: #fff;
+  z-index: 999;
+}
+header .header-inner .menu.active .hamburger .open {
+  opacity: 0;
+}
+header .header-inner .menu.active .hamburger .close {
+  opacity: 1;
+}
+header .header-inner .menu-list {
+  position: fixed;
+  top: 30%;
+  transform: translateX(-200px);
+}
+header .header-inner .menu-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "contents-title";
+  font-size: 60px;
+}
+
+footer {
+  padding-top: 100px;
+}
+footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  padding: 0 45px;
+  background: linear-gradient(45deg, #00FF73, #DFE621);
+}
+footer .footer-inner .brand-img {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer-inner .brand-img path.stroke-path {
+  fill: #002AFF;
+}
+footer .footer-inner .brand-img img {
+  width: 80px;
+}
+footer .footer-inner .footer-cont {
+  font-size: 18px;
+  font-family: "contents";
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 400px;
+  width: calc(100% - 400px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.sc-title {
+  width: 100%;
+  height: 100vh;
+}
+.sc-title .brand-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sc-title .brand-title h1 {
+  font-family: "title";
+  font-size: 20vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.comm {
+  background: #fff;
+}
+.comm-inner {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+}
+.comm-inner_left {
+  width: 35%;
+}
+.comm-inner_left .left_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.comm-inner_left .left_title h2 {
+  font-family: "contents-title";
+  text-transform: uppercase;
+  font-size: 6vw;
+}
+.comm-inner_right {
+  width: 65%;
+}
+.comm-inner_right .right-inner ul {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.comm-inner_right .right-inner ul li {
+  position: relative;
+}
+.comm-inner_right .right-inner ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.comm-inner_right .right-inner ul li:last-child::before {
+  display: none;
+}
+.comm-inner_right .right-inner ul li:last-child .hover-img {
+  top: -140px !important;
+}
+.comm-inner_right .right-inner ul li .list-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.comm-inner_right .right-inner ul li .list-cont .img {
+  width: 100%;
+  max-width: 500px;
+}
+.comm-inner_right .right-inner ul li .list-cont .img img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.comm-inner_right .right-inner ul li .list-cont .text {
+  font-family: "contents";
+  word-break: break-word;
+  font-size: 1.3vw;
+  font-weight: 300;
+  flex: 1;
+}
+.comm-inner_right .right-inner ul li .list-cont:hover .hover-img {
+  opacity: 1;
+}
+.comm-inner_right .right-inner ul li .list-cont .hover-img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.more-sect .s2-inner ul li {
+  border-bottom: 1px solid #ccc;
+}
+.more-sect .s2-inner ul li:first-child {
+  border-top: 1px solid #ccc;
+}
+.more-sect .s2-inner ul li .list-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 45px;
+}
+.more-sect .s2-inner ul li .list-inner .num {
+  font-family: "num";
+  font-size: 90px;
+  flex: 0.2;
+}
+.more-sect .s2-inner ul li .list-inner > p, .more-sect .s2-inner ul li .list-inner div {
+  position: relative;
+  font-size: 22px;
+  flex: 1;
+}
+.more-sect .s2-inner ul li .list-inner > p .show-img, .more-sect .s2-inner ul li .list-inner div .show-img {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 700;
+}
+.more-sect .s2-inner ul li .list-inner > p .show-img:hover + .list-inner_img, .more-sect .s2-inner ul li .list-inner div .show-img:hover + .list-inner_img {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.more-sect .s2-inner ul li .list-inner > p .list-inner_img, .more-sect .s2-inner ul li .list-inner div .list-inner_img {
+  position: absolute;
+  top: -280px;
+  left: 0;
+  border: 2px solid #ccc;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

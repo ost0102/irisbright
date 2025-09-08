@@ -1,0 +1,45 @@
+.more-sect{
+    .s2-inner{
+        ul{
+            li{
+                border-bottom: 1px solid #ccc;      
+                &:first-child{
+                    border-top: 1px solid #ccc;
+                }
+                .list-inner{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 45px;
+                    .num{
+                        font-family: 'num';
+                        font-size: 90px;
+                        flex: .2;
+                    }
+                    > p, div{
+                        position: relative;
+                        font-size: 22px;
+                        flex: 1;
+                        .show-img{
+                            cursor: pointer;
+                            text-decoration: underline;
+                            text-underline-position: under;
+                            font-weight: 700;
+                            &:hover + .list-inner_img{
+                                opacity: 1;
+                                transition: all .3s ease;
+                            }
+                        }
+                        .list-inner_img{
+                            position: absolute;
+                            top: -280px;
+                            left: 0;
+                            border: 2px solid #ccc;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
