@@ -7,6 +7,8 @@ footer{
         height: 400px;
         padding: 0 45px;
         background: linear-gradient(45deg, #00FF73, #DFE621);
+        background-size: 400% 400%;
+        animation: gradientMove 6s ease infinite;
         .brand-img{
             display: flex;
             align-items: center;

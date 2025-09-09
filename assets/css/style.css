@@ -10,6 +10,17 @@
   color: #1D00EF;
 }
 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -143,6 +154,8 @@ footer .footer-inner {
   height: 400px;
   padding: 0 45px;
   background: linear-gradient(45deg, #00FF73, #DFE621);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
 }
 footer .footer-inner .brand-img {
   display: flex;
