@@ -310,16 +310,17 @@ footer .footer-inner .footer-cont {
   align-items: center;
   gap: 10px;
   padding: 10px 45px;
+  width: 100%;
 }
 .more-sect .s2-inner ul li .list-inner .num {
   font-family: "num";
   font-size: 90px;
-  flex: 0.2;
+  max-width: 250px;
+  width: 100%;
 }
 .more-sect .s2-inner ul li .list-inner > p, .more-sect .s2-inner ul li .list-inner div {
   position: relative;
   font-size: 22px;
-  flex: 1;
 }
 .more-sect .s2-inner ul li .list-inner > p .show-img, .more-sect .s2-inner ul li .list-inner div .show-img {
   cursor: pointer;

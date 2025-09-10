@@ -11,15 +11,16 @@
                     align-items: center;
                     gap: 10px;
                     padding: 10px 45px;
+                    width: 100%;
                     .num{
                         font-family: 'num';
                         font-size: 90px;
-                        flex: .2;
+                        max-width: 250px;
+                        width: 100%;
                     }
                     > p, div{
                         position: relative;
                         font-size: 22px;
-                        flex: 1;
                         .show-img{
                             cursor: pointer;
                             text-decoration: underline;
